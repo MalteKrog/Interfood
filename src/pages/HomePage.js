@@ -1,9 +1,18 @@
 import React from 'react'
-import  Footer  from '../components/Footer'
+
+import VideoBanner from '../components/Homepage/videobanner/VideoBanner'
+
+// CSS import
+import '../components/Homepage/homepage.css'
+import Kurv from '../components/Kurv/Kurv.js'
 
 const HomePage = () => {
   return (
-    <div><Footer/></div>
+    <main>
+      <VideoBanner />
+      <Kurv />
+
+    </main>
   )
 }
 

@@ -1,0 +1,21 @@
+@import url("https://use.typekit.net/kmx5gpf.css");
+
+h1, h2, h3, h4 {
+    font-family: source-serif-4, serif;
+    font-style: normal;
+}
+
+h5, h6, p {
+    font-family: neue-haas-grotesk-text,sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
