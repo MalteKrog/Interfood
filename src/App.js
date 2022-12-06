@@ -4,10 +4,13 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProductPage from './pages/ProductPage';
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div>
+
+      {/* Skal vi ikke lave et nav component? */}
       <NavLink to="/">
           Hjem
       </NavLink>
@@ -26,6 +29,7 @@ function App() {
         <Route exact path="/about" element={<AboutPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
