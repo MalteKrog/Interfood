@@ -68,3 +68,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+npm install --save react-on-screen
+Jeg har brugt react on screen / Trackvisibilty på contact component, for at få den til at poppe ved visibility.
+
+npm install @emailjs/browser
+Vores contact formular install
