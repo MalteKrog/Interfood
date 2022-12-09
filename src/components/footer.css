@@ -1,16 +1,19 @@
 .footer {
     background-color: #222222;
     display: flex;
-    width: 100vw;
-    height: 200px;
-    align-items: center;
+    width: auto;
+    height: auto;
+    align-items: flex-start;
     justify-content: center;
+    padding: 20px;
+    flex-direction: column;
 }
 
 .logo-box {
-    width: 50vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
+    margin: 30px 0;
 }
 
 .mobil-flexbox {
@@ -21,49 +24,101 @@
     width: 100px;
 }
 
-.ul-flexbox, .ul-flexbox-interfood {
+.ul-box {
+    margin: 5px 0 20px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    height: auto;
 }
 
-.ul-flexbox-active {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.footer-li {
+.footer-li,
+.ul-box a {
     color: #fff;
-    font-size: 12px;
-}
-
-.ul, .ul-interfood, .ul-konto, .ul-links {
-    display: flex;
-    opacity: 0;
-    height: 0;    
-}
-
-.ul-active, .ul-interfood-active, .ul-konto-active, .ul-links-active {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    opacity: 1;
-    transition: 0.5s ease-in-out;
-}
-
-h3 {
-    display: block;
-    opacity: 1;
-    font-weight: 600;
+    margin: 5px 0;
     font-size: 14px;
-    color: #fff;
+}
+
+.ul-box a {
+    text-decoration: none;
 }
 
 .top-line {
-    height: 2px;
+    position: relative;
+    top: 20px;
+    height: 3px;
     width: 90%;
     margin: 0 auto;
-    background-color: red;
+    background-color: #68686848;
+}
+
+.bottom-line {
+    position: relative;
+    bottom: 20px;
+    height: 3px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #68686848;
+}
+
+.footer-section h3 {
+    display: block;
+    opacity: 1;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    width: fit-content;
+    border-bottom: 2px solid #CF4444;
+}
+
+.logo-box p {
+    display: none;
+}
+
+@media only screen and (min-width: 650px) {
+    .footer {
+        flex-direction: row;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+
+    .mobil-flexbox {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo-box {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100px;
+    }
+
+    .logo {
+        height: fit-content;
+    }
+
+    .footer-section {
+        margin: 0 20px;
+    }
+
+    .logo-box p {
+        color: #fff;
+        font-size: 10px;
+        margin-top: 10px;
+        line-height: 25px;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+    .footer-section {
+        margin: 0 40px;
+    }
+
+    .logo-box {
+        margin-right: 100px;
+    }
 }
