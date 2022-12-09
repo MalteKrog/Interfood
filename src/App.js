@@ -1,28 +1,16 @@
 import './App.css';
-import { Route, Routes, NavLink } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ProductPage from './pages/ProductPage';
 import Footer from './components/Footer'
+import Nav from './components/nav/Nav';
 
 function App() {
   return (
-    <div>
-
-      {/* Skal vi ikke lave et nav component? */}
-      <NavLink to="/">
-          Hjem
-      </NavLink>
-      <NavLink to="/products">
-          Produkter
-      </NavLink>
-      <NavLink to="/about">
-          Om os
-      </NavLink>
-      <NavLink to="/contact">
-          Kontakt
-      </NavLink>            
+    <div>   
+      <Nav/>        
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/products" element={<ProductPage />} />

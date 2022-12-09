@@ -1,0 +1,113 @@
+/* Navigation */
+
+.nav {
+
+    display: flex;
+    align-items: center;
+    width: 54%;
+    padding-left: 46%;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: transparent;
+}
+
+.nav-logo {
+    width: auto;
+    z-index: 20;
+}
+
+.nav-profile {
+    display: flex;
+    padding-right: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.nav-toggler div {
+    width: 1.8rem;
+    height: 3px;
+    margin: 0.4rem;
+    background: rgb(247, 54, 54);
+    position: fixed;
+    left: 20px;
+    top: 1.6rem;
+    border-radius: 19%;
+    transition: 0.05s ease-in;
+    border-radius: 10px;
+}
+
+.nav-toggler div:nth-child(2) {
+    top: 0.4rem;
+    width: 1.4rem;
+}
+
+.nav-toggler div:nth-child(3) {
+    top: 1rem;
+    width: 2.1rem;
+}
+
+.nav-toggler {
+    position: relative;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateX(-100%);
+    transition: 0.2s ease-in;
+    z-index: 10;
+}
+
+.navigation-container {
+   width: 60%;
+    display: grid;
+    margin: 40%;
+    grid-template-columns: 1fr;
+    height: 20px;
+}
+
+.nav-active {
+    transform: translateX(0);
+}
+
+.toggle .lineone  {
+    transform: rotate(-45deg) translate(7px, -6px);
+    width: 2.3rem;
+}
+
+.toggle .linetwo {
+    opacity: 0;
+}
+
+.toggle .linethree {
+    transform: rotate(45deg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-header {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/* Når Product title bliver klikket, skal produkt container folde sig ud*/
