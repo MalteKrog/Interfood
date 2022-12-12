@@ -58,7 +58,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 60%;
+    width: 100%;
     height: 100vh;
     background-color: #fff;
     flex-direction: column;
@@ -71,20 +71,22 @@
 }
 
 .navigation-container {
-   width: 60%;
-    display: grid;
-    margin: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20% 0;
     grid-template-columns: 1fr;
     height: 20px;
+    ;
 }
 
 .nav-active {
     transform: translateX(0);
 }
 
-.toggle .lineone  {
-    transform: rotate(-45deg) translate(7px, -6px);
-    width: 2.3rem;
+.toggle .lineone {
+    transform: rotate(-45deg) translate(7px, -7px);
+    width: 2.1rem;
 }
 
 .toggle .linetwo {
@@ -95,19 +97,54 @@
     transform: rotate(45deg);
 }
 
-a {
+.nav-link {
+    font-size: 18px;
+    font-family: "Bold";
+    align-self: flex-start;
+    color: #000;
     text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 10%;
 }
 
 .product-title {
+    font-family: bold;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
+}
+
+.product-title h4 {
+    margin-right: 20px;
+    padding-bottom: 3px;
+    border-bottom: rgb(247, 54, 54) 2px solid;
+}
+
+h5 {
+    display: grid;
+    font-family: "Roman";
+    font-size: 16px;
+    padding: 2px 0;
+    gap: 100px;
+}
+
+.product-item {
+    padding: 0 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .product-header {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    padding: 0 5%;
 }
 
-/* Når Product title bliver klikket, skal produkt container folde sig ud*/
+.product-header a {
+    text-decoration: none;
+    color: #000;
+}
