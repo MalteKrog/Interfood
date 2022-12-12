@@ -1,4 +1,5 @@
 import React from 'react'
+import {BsArrowRight} from 'react-icons/bs'
 
 import './products.css'
 
@@ -16,12 +17,12 @@ const ProductCard = () => {
 
       <div className='product-info-container'>
         <div>
-          <h3>Product title</h3>
-          <h3>Price</h3>
+          <h3 className='product-title'>Product title</h3>
+          <h3 className='price'>Price</h3>
         </div>
         
         <p>Description</p>
-        <button className='btn-2'>See more</button>
+        <button className='btn-2'>See more <BsArrowRight/></button>
 
       </div>
 

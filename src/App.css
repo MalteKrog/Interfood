@@ -78,3 +78,11 @@
     border: none;
     background-color: transparent;
   }
+
+  .btn-2:hover {
+    border: none;
+    color: rgb(247, 54, 54);
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+    transition: ease-in-out 0.4s;
+  }

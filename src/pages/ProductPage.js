@@ -5,9 +5,9 @@ import '../components/Products/products.css'
 
 const ProductPage = () => {
   return (
-    <>
+    <div className='productPage'>
       <ProductCard />
-    </>
+    </div>
   )
 }
 

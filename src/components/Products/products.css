@@ -1,4 +1,9 @@
+.productPage {
+    background-color: #E2E2E2;
+    padding: 5%;
+}
 .product-card-container {
+    margin: 25px;
     width: 258px;
     height: 350px;
     background-color: grey;
@@ -13,7 +18,37 @@
 }
 
 .product-info-container {
-    width: 100%;
+    position: relative;
+    bottom: 0%;
+    max-width: 100%;
     height: 30%;
     background-color: #fff;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-title, .price {
+    font-size: 1.2rem;
+}
+
+.product-info-container > div{
+    display: flex;
+}
+
+.product-info-container > div h3{
+    display: flex;
+    width: 50%;
+}
+
+.product-info-container > p{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.product-info-container button{
+    display: flex;
+    gap: 1rem;
+    align-self: end;
 }
