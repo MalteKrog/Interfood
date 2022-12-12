@@ -40919,6 +40919,7 @@ node_modules/.cache/babel-loader/4500d6755415acd623f31bc08faad4a01adb17429d476f4
 node_modules/.cache/babel-loader/4186d081909ff91bbde9c9fdb313d35fa2e35df190bf0e3d0e9edb0915ce5bf2.json
 node_modules/.cache/babel-loader/37afee221b176dbf30f5a91bddbe22e4153f5a04aa2eb88315dba6b94c182d9f.json
 node_modules/.cache/babel-loader/19e9dc9c2620b55784c4c8bc2609d68d099de99a0b822f4d4deb8639291e40b8.json
+<<<<<<< Updated upstream
 package.json
 package-lock.json
 node_modules/style-to-object/README.md
@@ -41682,6 +41683,8 @@ node_modules/.cache/babel-loader/020059df9aeab1f25a48c50ba5c97c6edbfbb888df155af
 node_modules/.cache/babel-loader/00674425a2bb084883c13f8aba7aa1c034e0e091cce3aba654503d66fd186b44.json
 node_modules/.cache/babel-loader/002c6326cb84dc8159b8060a92563648f04da85178267885dd24216afc42b044.json
 node_modules/.cache/babel-loader/00240d5fad86e0424cba9664d51c398cb98338b759bf9314fa70e20946a4163b.json
+=======
+>>>>>>> Stashed changes
 node_modules/.cache/babel-loader/081e69db78d02eb7560e45e009f30c321d36b78894feab29954c98231739db2f.json
 node_modules/.cache/babel-loader/13e901da1294417542a1a6434359d40389a6edff7d76d1caed0adb022edee2b2.json
 node_modules/.cache/babel-loader/1e9de3b913000894e50328c2431c21d2ed9bfcf6b5365cf24a1c6050f6ba7e8c.json

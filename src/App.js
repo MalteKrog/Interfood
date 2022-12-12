@@ -7,10 +7,18 @@ import ProductPage from './pages/ProductPage';
 import Footer from './components/Footer'
 import Nav from './components/nav/Nav';
 
+// Fonts
+import "./assets/fonts/NeueHaasDisplayThin.ttf";
+import "./assets/fonts/NeueHaasDisplayLight.ttf";
+import "./assets/fonts/NeueHaasDisplayRoman.ttf";
+import "./assets/fonts/NeueHaasDisplayMediu.ttf";
+import "./assets/fonts/NeueHaasDisplayBold.ttf";
+import "./assets/fonts/NeueHaasDisplayBoldItalic.ttf";
+
 function App() {
   return (
-    <div>   
-      <Nav/>        
+    <div>
+      <Nav />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/products" element={<ProductPage />} />
