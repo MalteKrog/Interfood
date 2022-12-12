@@ -2,28 +2,30 @@ import React from 'react'
 
 import './værdier.css'
 
-const VærdierMission = () => {
+const VærdierMission = ({post}) => {
+
+    const img = post.acf.værdierbillede?.url;
   return (
-    <section className='vaerdier-mission'>
+    <section key={post.id} className='vaerdier-mission'>
         <div className='mission-cards'>
             <div className='mission-banner'>
-                <img src='' alt='Et eller andet billede'/>
+                <img src={img} alt={post.acf.værdierbillede.alt}/>
                 <div className='banner-tekst'>
-                    <h2>Vores værdier og misson</h2>
-                    <p>kljeralsjkfhlæidfjdslæidqhloaisæj laksdfchj alæskdhjfc ælaskjhclkdva ihjælj JLKSH IH KLÆD</p>
+                    <h2>{post.acf.vaerdierOverskrift}</h2>
+                    <p>{post.acf.vaerdierTekst}</p>
                 </div>
             </div>
                 <div className='mission-card test'>
-                    <h3>Gratis og hurtig levering!</h3>
-                    <p>Vi leverer dine varer helt gratis når du handler for over 3000 kr.</p>
+                    <h3>{post.acf.vaerdierKort1}</h3>
+                    <p>{post.acf.kort1tekst}</p>
                 </div>
                 <div className='mission-card'>
-                    <h3>De bedste varer</h3>
-                    <p>Vi har de bedste varer til de bedste priser</p>
+                    <h3>{post.acf.vaerdierKort2}</h3>
+                    <p>{post.acf.kort2tekst}</p>
                 </div>
                 <div className='mission-card test2'>
-                    <h3>God kundeservice</h3>
-                    <p>Vi går op i vores kunder og stræber efter at give dig den bedste service </p>
+                    <h3>{post.acf.vaerdierKort3}</h3>
+                    <p>{post.acf.kort3tekst}</p>
                 </div>
         </div>
     </section>

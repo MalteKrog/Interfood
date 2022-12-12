@@ -1,8 +1,10 @@
 import React from 'react'
 
-const VideoBanner = () => {
+const VideoBanner = ({ post }) => {
   return (
     <div className='video-banner'>
+
+        <iframe src="https://www.youtube.com/embed/w_lMw7ZqhYs?rel=0&amp;controls=1&amp&amp;showinfo=0&amp;modestbranding=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         <h1>Interfood</h1>
 
