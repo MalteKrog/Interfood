@@ -148,3 +148,55 @@ h5 {
     text-decoration: none;
     color: #000;
 }
+
+@media only screen and (min-width: 600px) {
+    .nav-toggler {
+        display: none;
+    }
+
+    .nav {
+
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        padding: 0 2.5%;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        display: flex;
+        transform: translateX(0);
+        width: auto;
+        height: auto;
+        background-color: #fff;
+        flex-direction: row;
+        transition: 0.2s ease-in;
+        z-index: 10;
+        position: static;
+    }
+
+    .navigation-container {
+        width: auto;
+        margin: 0;
+        flex-direction: row;
+        padding: 0;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .product-item {
+        display: none;
+    }
+
+    .nav-profile {
+        position: relative;
+        z-index: 100;
+    }
+
+    h5 {}
+
+    .nav-logo {
+        order: -1;
+    }
+}
