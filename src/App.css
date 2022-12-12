@@ -73,3 +73,8 @@
   .contact form button:hover::before {
     width: 100%;
   }
+
+  .btn-2 {
+    border: none;
+    background-color: transparent;
+  }
