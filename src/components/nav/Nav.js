@@ -37,7 +37,7 @@ const Nav = () => {
             <div className='nav'>
                 <div className={active}>
                     <div className='navigation-container'>
-                        <NavLink className="nav-link" to="/products">
+                        <NavLink className="nav-link products" to="/products">
                             Produkter
                         </NavLink>
 
@@ -71,13 +71,12 @@ const Nav = () => {
                                             </div>
                                         </div>}
                                 </div>
-
                             </>
                         ))}
                         <NavLink className="nav-link" to="/">
                             Hjem
                         </NavLink>
-                        <NavLink className="nav-link" to="/about">
+                        <NavLink className="nav-link om-os" to="/about">
                             Om os
                         </NavLink>
                         <NavLink className="nav-link" to="/contact">
