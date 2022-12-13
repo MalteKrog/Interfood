@@ -47,6 +47,18 @@ p.success {
   color: white !important;
 }
 
+  .btn-2 {
+    border: none;
+    background-color: transparent;
+  }
+
+  .btn-2:hover {
+    border: none;
+    color: rgb(247, 54, 54);
+    cursor: pointer;
+    background-color: rgb(234, 234, 234);
+    transition: ease-in-out 0.4s;
+  }
 .contact h2 {
   font-size: 45px;
   font-weight: 700;
@@ -147,6 +159,15 @@ p.success {
   width: 100%;
 }
 
+.btn-1 {
+  border: none;
+  background-color: transparent;
+  background-color: rgb(247, 54, 54);
+  padding: 10px 40px;
+  color: white;
+  border-radius: 10px;
+}
+
 .btn-2 {
   border: none;
   background-color: transparent;
@@ -220,9 +241,4 @@ p.success {
 
 iframe{
     width: 1600px;
-}
-
-.kkort3{
-    display:flex;
-    flex-direction: block;
 }
