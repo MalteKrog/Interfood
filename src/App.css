@@ -94,7 +94,6 @@
 .right {
   padding-left: 5%;
   flex: 50%;
-  
 }
 
 p.success {
@@ -225,7 +224,7 @@ p.success {
 }
 
 
-/* Kontakt bokse */
+/* Kontakt bokse - BRUGER VI IKKE??*/
 .kontaktkort-container{
     height: 100vh;
     width: 80vh;
