@@ -1,6 +1,9 @@
 .productPage {
     background-color: #E2E2E2;
     padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Product card */
@@ -151,7 +154,7 @@
 
 .image-container  {
     width: 90%;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
     background-color: #E9E9E9;
     overflow: hidden;
     display: flex;
@@ -251,4 +254,47 @@
 .sicon-lager:hover p {
     width: 100%;
     margin-right: 5px;
+}
+
+/* accordion */
+
+
+@media only screen and (min-width: 1000px){
+
+    .product-page {
+        background-color:  #E9E9E9;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .btn-2 {
+        width: 100%;
+        background-color: white;
+    }
+    .product-flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .image-container  {
+        width: 50%;
+        height: 100%;
+        background-color: #E9E9E9;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+    }
+
+
+    .sproduct-info {
+        background-color: #fff; 
+        min-width: 45%;
+        max-width: 50%;
+        height: 100vh;
+        padding: 20px;
+    }
+    
 }

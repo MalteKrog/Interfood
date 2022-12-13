@@ -22,6 +22,7 @@ const SingleProductInfo = ({ showDialog, setShowDialog, product}) => {
                     <h1>{product.acf.price}kr.</h1>
                 </div>
                 <h4>Vare nr.: {product.acf.varenr}</h4>
+                <p>{product.acf.description}</p>
                 <div className='sproduct-infobar-container'>
                         {category === "frost" ?
                         <div className='sicon-frost'>
