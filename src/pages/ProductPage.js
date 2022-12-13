@@ -20,12 +20,25 @@ const ProductPage = () => {
         getData();
     }, []);
     
+    const {...product} = products
   return (
-    <div className='productPage'>
-        {products.map(product => (
-          <ProductCard  data={product} key={product.id} product={product} />
-        ))}
-    <Kurv />
+    <div className='background'>
+          <div className='filters'>
+                <h1>Frost</h1> 
+                <p>Alle vores Frost varer</p>
+                <div className='filter-buttons'>
+                  <button className='btn-3 et'>Pris</button>
+                  <button className='btn-3 to'>På Lager</button>
+                  <button className='btn-3'>Alle Filtre</button>
+                </div>
+          </div>
+
+      <div className='productPage'>
+          {products.map(product => (
+            <ProductCard  data={product} key={product.id} product={product} />
+          ))}
+      <Kurv />
+      </div>
     </div>
   )
 }

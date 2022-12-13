@@ -81,10 +81,14 @@ export const Contact = () => {
                         <strong>+45 50 37 81 85</strong>
                         </div>
 
+                   
+
                         <div class="box">
                           <p>Ønsker du at sende os en mail, kan du gøre det på følgende mail</p>
                         <strong>info@interfood.dk</strong>
                         </div>
+
+            
 
                         <div class="box">
                           <p>Skriv dit nummer</p>
