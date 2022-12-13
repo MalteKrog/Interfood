@@ -37,39 +37,90 @@
     url("./assets/fonts/NeueHaasDisplayBoldItalic.ttf") format("truetype");
 }
 
+.contact h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .contact {
-  background: gray;
+  background: rgb(242, 242, 242);
   padding: 60px 0 50px 0;
+}
+
+#kontaktbtn {
+  border: 0;
+  background-color: #CF4444;
+  color: #fff;
+  padding: .5rem;
+  margin: 1rem 0;
+  width: 40%;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#kontaktbtn:hover {
+  background-color: #000000b1;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-box {
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-size: 5.2rem;
+}
+
+.left {
+  height: 100%;
+}
+
+.right {
+  padding: 25px 40px;
 }
 
 p.success {
   color: white !important;
 }
 
-  .btn-2 {
+.btn-2 {
     border: none;
     background-color: transparent;
   }
 
-  .btn-2:hover {
+.btn-2:hover {
     border: none;
     color: rgb(247, 54, 54);
     cursor: pointer;
     background-color: rgb(234, 234, 234);
     transition: ease-in-out 0.4s;
   }
-.contact h2 {
-  font-size: 45px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
 
+/* Den farve som baren skal have altid */
 .contact form input,
 .contact form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
+  background: rgba(96, 93, 93, 0.1);
+  border: 1px solid rgba(219, 219, 219, 0.5);
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
@@ -78,17 +129,18 @@ p.success {
   transition: 0.3s ease-in-out;
 }
 
+/* Den farve som baren skal have når man trykker på den */
 .contact form input:focus,
 .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
+  background: rgb(130, 130, 130);
 }
 
 .contact form input::placeholder,
 .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: rgb(107, 107, 107);
+  font-family: "light";
 }
 
 .contact form input:focus::placeholder,

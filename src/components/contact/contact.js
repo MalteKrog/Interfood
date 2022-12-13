@@ -24,24 +24,27 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
+       <h2>Kontakt</h2>
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h2>Kontakt mig!</h2>
-                  <Row>
-                    <form ref={form} onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input type="text" name="from_name" />
-                    <label>Email</label>
-                    <input type="email" name="email" />
-                    <label>Message</label>
-                    <textarea name="message" />
-                    <input className="kontaktbtn" type="submit" value="Send" />
-                  </form>
-                  </Row>
+                <section className="container">
+                    <div className="contact-box">
+                      <div className="left">
+                      <form ref={form} onSubmit={sendEmail}>
+                      <input type="text" className="field" name="from_name" placeholder="Navn" />
+                      <input type="email" className="field" name="email" placeholder="Email" />
+                      <input type="subject" className="field" name="subject" placeholder="Emne" />
+                      <textarea className="field" name="message" placeholder="Besked..." />
+                      <input id="kontaktbtn" type="submit" value="Send" />
+                      </form>
+                      </div>
+                      <div className="right"></div>
+                    </div>
+                  </section>
               </div>}
             </TrackVisibility>
           </Col>
