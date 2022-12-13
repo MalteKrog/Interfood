@@ -6,7 +6,9 @@ import {TbTruck,TbTruckOff} from 'react-icons/tb'
 import './products.css'
 import SingleProductInfo from './SingleProductInfo'
 
-const ProductCard = ({ product }) => {
+const ProductCard = (props) => {
+
+  const {...product} = props.data;
   const stockAmmount = product.acf.stockammount
   const category = product.acf.category
 
@@ -15,7 +17,6 @@ const ProductCard = ({ product }) => {
   return (
     <>
       <div onClick={() => setShowDialog(true)} className='product-card-container'>
-
         <div className='product-image-container'>
 
           <img src={product.acf.productimage.url} alt={product.acf.productimage.alt}/>
@@ -49,7 +50,7 @@ const ProductCard = ({ product }) => {
           </div>
           
           <p>{product.acf.description}</p>
-          <button className='btn-2'>See more <BsArrowRight/></button>
+          <button className='btn-2'>Se mere <BsArrowRight/></button>
 
         </div>
 

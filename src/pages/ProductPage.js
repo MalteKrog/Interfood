@@ -23,7 +23,7 @@ const ProductPage = () => {
   return (
     <div className='productPage'>
         {products.map(product => (
-          <ProductCard  key={product.id} product={product} />
+          <ProductCard  data={product} key={product.id} product={product} />
         ))}
     <Kurv />
     </div>
