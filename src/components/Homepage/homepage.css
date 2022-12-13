@@ -1,13 +1,13 @@
 /* video banner */
 
 main {
+    position: relative;
     width: 100%;
-    height: 100vh;
 }
 
 .video-banner {
     position: relative;
-    height: 92%;
+    height: 92vh;
     width: 100%;
     text-align: right;
     background-color: #e9e9e9;
