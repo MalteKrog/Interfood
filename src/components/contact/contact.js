@@ -1,11 +1,34 @@
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Container, Row, Col } from "react-bootstrap";
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
 
-/* Startet på en kontakt formular, den virker til min mail cthrige@gmail.com */
+
+/* Prøver at bruge et library kaldet "React phone number input - 
+søg evt på nettet efter det - virker ikke så godt pt" */
+
+const Reactphone = () => {
+  const [value, setValue] = useState();
+return (
+  <PhoneInput
+    classnName="phoneInput"
+    country={'dk'}
+    defaultCountry="DK"
+    placeholder="Enter phone number"
+    value={value}
+    onChange={setValue}/>
+)
+};
+
+
+export default Reactphone;
+
+/* Startet på en kontakt formular, den virker til min mail cthrige@gmail.com
+Kan vi godt fortsætte med, bare ik spam mig hehe */
 
 export const Contact = () => {
   const form = useRef();
@@ -30,22 +53,44 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <section className="container">
-                    <div className="contact-box">
-                      <div className="left">
-                      <form ref={form} onSubmit={sendEmail}>
-                      <input type="text" className="field" name="from_name" placeholder="Navn" />
-                      <input type="email" className="field" name="email" placeholder="Email" />
-                      <input type="subject" className="field" name="subject" placeholder="Emne" />
-                      <textarea className="field" name="message" placeholder="Besked..." />
-                      <input id="kontaktbtn" type="submit" value="Send" />
-                      </form>
+            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+
+              <section className="container">
+                <div className="contact-box">
+                 
+
+                    {/* Kontakt formularboksen */}
+                        <div className="left">
+                        <form ref={form} onSubmit={sendEmail}>
+                        <input type="text" className="field" name="from_name" placeholder="Navn" />
+                        <input type="email" className="field" name="email" placeholder="Email" />
+                        <input type="subject" className="field" name="subject" placeholder="Emne" />
+                        <textarea className="field" name="message" placeholder="Besked..." />
+                        <input id="kontaktbtn" type="submit" value="Send" />
+                        </form>
+                        </div>
+                </div>
+                 {/* 3 bokse med */}
+                 <div className="container">
+                    <div className="right">
+                        <div class="box1">Vi glæder os til at høre fra dig! Kontakt os på følgende nummer</div>
+                        <strong>+45 50 37 81 85</strong>
+                        <div class="box2">Ønsker du at sende os en mail, kan du gøre det på følgende mail</div>
+                        <strong>info@interfood.dk</strong>
+                        <div class="box3">Skriv dit nummer</div>
+                        <strong>Så ringer vi dig op - når vi har en ledig kollega</strong>
+                        <PhoneInput
+                            inputProps={{
+                              country:'dk',
+                              name: 'phone',
+                              required: true,
+                              autoFocus: true
+                            }}
+                          />
+                        </div>
                       </div>
-                      <div className="right"></div>
-                    </div>
-                  </section>
-              </div>}
+            </section>
+          </div>}
             </TrackVisibility>
           </Col>
         </Row>
