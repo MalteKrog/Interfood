@@ -41,39 +41,93 @@
     url("./assets/fonts/NeueHaasDisplayBoldItalic.ttf") format("truetype");
 }
 
-/* Kontakt form */
+.contact h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "medium";
+}
+
 .contact {
-  background: gray;
+  background: rgb(242, 242, 242);
   padding: 60px 0 50px 0;
+}
+
+#kontaktbtn {
+  border: 0;
+  background-color: #CF4444;
+  color: #fff;
+  padding: .5rem;
+  margin: 1rem 0;
+  width: 40%;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#kontaktbtn:hover {
+  background-color: #cd1414;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.contact-box {
+  max-width: 50%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-size: 5.2rem;
+}
+
+.left {
+  height: 100%;
+}
+
+.right {
+  padding: 25px 40px; 
+  flex: 50%;
+}
+
+.row{
+  display: flex;
 }
 
 p.success {
   color: white !important;
 }
 
-  .btn-2 {
+.btn-2 {
     border: none;
     background-color: transparent;
   }
 
-  .btn-2:hover {
+.btn-2:hover {
     border: none;
     color: rgb(247, 54, 54);
     cursor: pointer;
     background-color: rgb(234, 234, 234);
     transition: ease-in-out 0.4s;
   }
-.contact h2 {
-  font-size: 45px;
-  font-weight: 700;
-}
 
+/* Den farve som baren skal have altid */
 .contact form input,
 .contact form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
+  background: rgba(96, 93, 93, 0.1);
+  border: 1px solid rgba(219, 219, 219, 0.5);
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
@@ -82,17 +136,18 @@ p.success {
   transition: 0.3s ease-in-out;
 }
 
+/* Den farve som baren skal have når man trykker på den */
 .contact form input:focus,
 .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
+  background: rgb(255, 253, 253);
 }
 
 .contact form input::placeholder,
 .contact form textarea::placeholder {
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: rgb(107, 107, 107);
+  font-family: "light";
 }
 
 .contact form input:focus::placeholder,
@@ -239,12 +294,26 @@ p.success {
 }
 
 /* Map sektion */
+
+.map-container {
+  background: rgb(242, 242, 242);
+}
+
 .tekst-container{
-    margin: 0 0 0 150px;
+  margin: 0 0 0 100px;
+  padding-top: 20px;
 }
 
 .maph2{
     font-size: 42px;
+    font-family: "medium";
+    padding-bottom: 10px;
+}
+
+.maph1{
+  font-size: 20px;
+  font-family: "light";
+  padding-bottom: 10px;
 }
 
 .mapouter {
@@ -253,5 +322,10 @@ p.success {
 }
 
 iframe{
-    width: 1600px;
+    width: 1170px;
+    height: 400px;
+    border-radius: 1px;
+    border: 35px solid black;
 }
+
+/* Telefon boks :) */
