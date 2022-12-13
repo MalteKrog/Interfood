@@ -44,7 +44,7 @@ const Nav = () => {
             <div className='nav'>
                 <div className={active}>
                     <div className='navigation-container'>
-                        <h3 className="nav-link products" to="/products" onClick={productToggle}>
+                        <h3 className="nav-link products" to="/products" onClick={productToggle} >
                             Produkter
                         </h3>
                         <div className={product}>
@@ -54,41 +54,41 @@ const Nav = () => {
                                     <div className="product-item" key={id} index={i}>
                                         <div className="product-title" onClick={() => toggle(i)}>
                                             <h4>{title}</h4>
-                                            <div>{isVisible === i ? '-' : '+'}</div>
+                                            <div className='open'>{isVisible === i ? '-' : '+'}</div>
                                         </div>
                                         {isVisible === i &&
                                             <div className="product-content">
                                                 <div className='product-header'>
                                                     <NavLink to="/products">
-                                                        <h5>{underpunkt}</h5>
+                                                        <h5 onClick={navToggle}>{underpunkt}</h5>
                                                     </NavLink>
-                                                    <h5>{underpunkt1}</h5>
-                                                    <h5>{underpunkt2}</h5>
-                                                    <h5>{underpunkt3}</h5>
-                                                    <h5>{underpunkt4}</h5>
-                                                    <h5>{underpunkt5}</h5>
-                                                    <h5>{underpunkt6}</h5>
-                                                    <h5>{underpunkt7}</h5>
-                                                    <h5>{underpunkt8}</h5>
-                                                    <h5>{underpunkt9}</h5>
-                                                    <h5>{underpunkt10}</h5>
-                                                    <h5>{underpunkt11}</h5>
-                                                    <h5>{underpunkt12}</h5>
-                                                    <h5>{underpunkt13}</h5>
-                                                    <h5>{underpunkt14}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt1}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt2}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt3}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt4}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt5}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt6}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt7}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt8}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt9}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt10}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt11}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt12}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt13}</h5>
+                                                    <h5 onClick={navToggle}> {underpunkt14}</h5>
                                                 </div>
                                             </div>}
                                     </div>
                                 </>
                             ))}
                         </div>
-                        <NavLink className="nav-link" to="/">
+                        <NavLink className="nav-link" to="/" onClick={navToggle}>
                             Hjem
                         </NavLink>
-                        <NavLink className="nav-link om-os" to="/about">
+                        <NavLink onClick={navToggle} className="nav-link om-os" to="/about">
                             Om os
                         </NavLink>
-                        <NavLink className="nav-link" to="/contact">
+                        <NavLink onClick={navToggle} className="nav-link" to="/contact">
                             Kontakt
                         </NavLink>
                     </div>
