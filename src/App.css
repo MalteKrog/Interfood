@@ -1,6 +1,10 @@
 /* Contact css */
 /* Ikke alt stylingen der virker pt, dunno why */
 
+
+@import url("https://use.typekit.net/kmx5gpf.css");
+
+
 @font-face {
   font-family: "Thin";
   src: local("NeueHaasDisplayThin"),
@@ -171,6 +175,15 @@ p.success {
 .btn-2 {
   border: none;
   background-color: transparent;
+}
+
+.btn-3 {
+  border: none;
+  background-color: transparent;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 40px;
+  color: rgb(247, 54, 54);
+  border-radius: 100px;
 }
 
 .contactcontainer{

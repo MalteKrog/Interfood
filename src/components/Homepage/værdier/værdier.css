@@ -15,14 +15,6 @@
     gap: 2rem;
 }
 
-.test {
-    justify-self: flex-start;
-}
-.test2 {
-    justify-self: flex-end;
-    background-color: red;
-}
-
 .mission-banner {
     display: flex;
     background-color: rgb(247, 54, 54);
@@ -46,6 +38,15 @@
 
 .mission-banner h2 {
     font-size: 2.5rem;
+    font-family: source-serif-4, serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.mission-banner p {
+    font-size: 1rem;
+    font-family: Roman;
+
 }
 
 .mission-card {
@@ -55,18 +56,22 @@
     justify-content: center;
     width: 350px;
     height: 200px;
-    background-color: #d0d0d0;
+    background-color: #e9e9e9;
 }
 
 .mission-card h3 {
     font-size: 1.5rem;
     color: #000;
     margin-bottom: 20px;
+    font-family: source-serif-4, serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .mission-card p {
     width: 60%;
     text-align: center;
+    font-family: roman;
 }
 
 
