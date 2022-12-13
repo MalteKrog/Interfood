@@ -9,7 +9,8 @@ import NavData from './NavData';
 const Nav = () => {
     const [active, setActive] = useState("nav-menu");
     const [toggleIcon, setToggleIcon] = useState("nav-toggler");
-    const [isOpen, setOpen] = useState(false);
+
+    const [product, setNav] = useState("nav-dropdown");
 
     const navToggle = () => {
         active === "nav-menu"
@@ -19,6 +20,12 @@ const Nav = () => {
         toggleIcon === "nav-toggler"
             ? setToggleIcon("nav-toggler toggle")
             : setToggleIcon("nav-toggler");
+    };
+
+    const productToggle = () => {
+        product === "nav-dropdown"
+            ? setNav("nav-dropdown nav-dropdown-active")
+            : setNav("nav-dropdown");
     };
 
     const [isVisible, setIsVisible] = useState(null);
@@ -37,42 +44,44 @@ const Nav = () => {
             <div className='nav'>
                 <div className={active}>
                     <div className='navigation-container'>
-                        <NavLink className="nav-link products" to="/products">
+                        <h3 className="nav-link products" to="/products" onClick={productToggle}>
                             Produkter
-                        </NavLink>
+                        </h3>
+                        <div className={product}>
 
-                        {NavData.map(({ id, title, underpunkt, underpunkt1, underpunkt2, underpunkt3, underpunkt4, underpunkt5, underpunkt6, underpunkt7, underpunkt8, underpunkt9, underpunkt10, underpunkt11, underpunkt12, underpunkt13, underpunkt14 }, i) => (
-                            <>
-                                <div className="product-item" key={id} index={i}>
-                                    <div className="product-title" onClick={() => toggle(i)}>
-                                        <h4>{title}</h4>
-                                        <div>{isVisible === i ? '-' : '+'}</div>
+                            {NavData.map(({ id, title, underpunkt, underpunkt1, underpunkt2, underpunkt3, underpunkt4, underpunkt5, underpunkt6, underpunkt7, underpunkt8, underpunkt9, underpunkt10, underpunkt11, underpunkt12, underpunkt13, underpunkt14 }, i) => (
+                                <>
+                                    <div className="product-item" key={id} index={i}>
+                                        <div className="product-title" onClick={() => toggle(i)}>
+                                            <h4>{title}</h4>
+                                            <div>{isVisible === i ? '-' : '+'}</div>
+                                        </div>
+                                        {isVisible === i &&
+                                            <div className="product-content">
+                                                <div className='product-header'>
+                                                    <NavLink to="/products">
+                                                        <h5>{underpunkt}</h5>
+                                                    </NavLink>
+                                                    <h5>{underpunkt1}</h5>
+                                                    <h5>{underpunkt2}</h5>
+                                                    <h5>{underpunkt3}</h5>
+                                                    <h5>{underpunkt4}</h5>
+                                                    <h5>{underpunkt5}</h5>
+                                                    <h5>{underpunkt6}</h5>
+                                                    <h5>{underpunkt7}</h5>
+                                                    <h5>{underpunkt8}</h5>
+                                                    <h5>{underpunkt9}</h5>
+                                                    <h5>{underpunkt10}</h5>
+                                                    <h5>{underpunkt11}</h5>
+                                                    <h5>{underpunkt12}</h5>
+                                                    <h5>{underpunkt13}</h5>
+                                                    <h5>{underpunkt14}</h5>
+                                                </div>
+                                            </div>}
                                     </div>
-                                    {isVisible === i &&
-                                        <div className="product-content">
-                                            <div className='product-header'>
-                                                <NavLink to="/products">
-                                                    <h5>{underpunkt}</h5>
-                                                </NavLink>
-                                                <h5>{underpunkt1}</h5>
-                                                <h5>{underpunkt2}</h5>
-                                                <h5>{underpunkt3}</h5>
-                                                <h5>{underpunkt4}</h5>
-                                                <h5>{underpunkt5}</h5>
-                                                <h5>{underpunkt6}</h5>
-                                                <h5>{underpunkt7}</h5>
-                                                <h5>{underpunkt8}</h5>
-                                                <h5>{underpunkt9}</h5>
-                                                <h5>{underpunkt10}</h5>
-                                                <h5>{underpunkt11}</h5>
-                                                <h5>{underpunkt12}</h5>
-                                                <h5>{underpunkt13}</h5>
-                                                <h5>{underpunkt14}</h5>
-                                            </div>
-                                        </div>}
-                                </div>
-                            </>
-                        ))}
+                                </>
+                            ))}
+                        </div>
                         <NavLink className="nav-link" to="/">
                             Hjem
                         </NavLink>

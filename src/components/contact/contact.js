@@ -12,12 +12,12 @@ søg evt på nettet efter det - virker ikke så godt pt" */
 
 const Reactphone = () => {
   const [value, setValue] = useState();
-return (
-  <PhoneInput
-    placeholder="Enter phone number"
-    value={value}
-    onChange={setValue}/>
-)
+  return (
+    <PhoneInput
+      placeholder="Enter phone number"
+      value={value}
+      onChange={setValue} />
+  )
 };
 
 export default Reactphone;
@@ -33,11 +33,11 @@ export const Contact = () => {
 
     emailjs.sendForm('service_lmb3z64', 'template_h78ix76', form.current, 'G7zZsOKAMUowl2Oa7')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
-      e.target.reset()
+    e.target.reset()
   };
 
   return (
@@ -45,13 +45,13 @@ export const Contact = () => {
       <h1 className="kontakttitle">Kontakt</h1>
       <Container>
         <Row className="contactcontainer">
-            <Col>
-              <TrackVisibility>
-                {({ isVisible }) =>
-                  <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+          <Col>
+            <TrackVisibility>
+              {({ isVisible }) =>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Kontakt mig!</h2>
-                    <Row>
-                      <form ref={form} onSubmit={sendEmail}>
+                  <Row>
+                    <form ref={form} onSubmit={sendEmail}>
                       <label>Name</label>
                       <input type="text" name="from_name" />
                       <label>Email</label>
@@ -62,12 +62,12 @@ export const Contact = () => {
                       <textarea name="message" />
                       <input className="kontaktbtn" type="submit" value="Send" />
                     </form>
-                    </Row>
+                  </Row>
                 </div>}
-              </TrackVisibility>
-           </Col>
-           <Col>
-           <div className="kontaktkort-container">
+            </TrackVisibility>
+          </Col>
+          <Col>
+            <div className="kontaktkort-container">
               <div className="kontaktcards">
                 <div className="kontaktkort kkort1">
                   <h2>Test</h2>
@@ -83,8 +83,8 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-            
-            </Col>
+
+          </Col>
         </Row>
       </Container>
     </section>
