@@ -20,7 +20,9 @@ return (
     defaultCountry="DK"
     placeholder="Enter phone number"
     value={value}
-    onChange={setValue}/>
+    onChange={value=>setValue(value)}
+    displayInitialValueAsLocalNumber
+    />
 )
 };
 
@@ -73,20 +75,24 @@ export const Contact = () => {
                  {/* 3 bokse med */}
                  <div className="container">
                     <div className="right">
-                        <div class="box1">Vi glæder os til at høre fra dig! Kontakt os på følgende nummer</div>
+
+                        <div class="box">
+                          <p>Vi glæder os til at høre fra dig! Kontakt os på følgende nummer</p>
                         <strong>+45 50 37 81 85</strong>
-                        <div class="box2">Ønsker du at sende os en mail, kan du gøre det på følgende mail</div>
+                        </div>
+
+                        <div class="box">
+                          <p>Ønsker du at sende os en mail, kan du gøre det på følgende mail</p>
                         <strong>info@interfood.dk</strong>
-                        <div class="box3">Skriv dit nummer</div>
+                        </div>
+
+                        <div class="box">
+                          <p>Skriv dit nummer</p>
                         <strong>Så ringer vi dig op - når vi har en ledig kollega</strong>
-                        <PhoneInput
-                            inputProps={{
-                              country:'dk',
-                              name: 'phone',
-                              required: true,
-                              autoFocus: true
-                            }}
-                          />
+                        <br>  
+                        </br>
+                        <PhoneInput />
+                        </div>
                         </div>
                       </div>
             </section>

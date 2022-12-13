@@ -70,12 +70,11 @@
   position: relative;
   display: flex;
   justify-content: left;
-  align-items: center;
   padding-left: 50px;
 }
 
 .contact-box {
-  max-width: 50%;
+  max-width: 42.5%;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -93,12 +92,9 @@
 }
 
 .right {
-  padding: 25px 40px; 
+  padding-left: 5%;
   flex: 50%;
-}
-
-.row{
-  display: flex;
+  
 }
 
 p.success {
@@ -228,11 +224,6 @@ p.success {
   background-color: transparent;
 }
 
-.contactcontainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
 /* Kontakt bokse */
 .kontaktkort-container{
@@ -316,3 +307,23 @@ iframe{
 }
 
 /* Telefon boks :) */
+
+.box{
+  background-color: #bc4040;
+  border: 1px solid #DDD;
+  width: 550px;
+  height: auto;
+  color: #fff;
+  font-family: "light";
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  padding: 20px 10px 20px 40px;
+}
+
+
+.box strong {
+  font-weight: 900;
+  font-family: "medium";
+}
+
