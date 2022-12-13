@@ -2,6 +2,7 @@ import React from 'react'
 import {BsSnow} from 'react-icons/bs'
 import {TbTruck,TbTruckOff} from 'react-icons/tb'
 import {CiStar} from 'react-icons/ci'
+import {IoIosArrowRoundBack} from 'react-icons/io'
 
 const SingleProductInfo = ({ showDialog, setShowDialog, product}) => {
     const stockAmmount = product.acf.stockammount
@@ -10,7 +11,7 @@ const SingleProductInfo = ({ showDialog, setShowDialog, product}) => {
   return (
     <dialog open={showDialog} className="product-page">
         <div className='product-flex-container'>
-            <button onClick={() => setShowDialog(false)} className='btn-2'>close</button>
+            <button onClick={() => setShowDialog(false)} className='btn-2 close'><IoIosArrowRoundBack />close</button>
             <div className='image-container'>
                 <img src={product.acf.productimage.url} alt={product.acf.productimage.alt} />
             </div>
