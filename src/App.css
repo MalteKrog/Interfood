@@ -101,6 +101,14 @@ p.success {
   color: white !important;
 }
 
+.btn-3 {
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px 30px;
+  color:  rgb(247, 54, 54);
+}
+
 .btn-2 {
     border: none;
     background-color: transparent;

@@ -175,12 +175,13 @@
 
 .product-page {
     position: fixed;
-    top: 5%;
+    top: 0%;
     width: 100vw;
     height: 100vh;
     border: none;
     z-index: 5;
     background-color: #fff;
+    padding-top: 5%;
 }
 
 .product-flex-container {

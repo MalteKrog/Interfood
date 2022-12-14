@@ -4,6 +4,8 @@ import VideoBanner from '../components/Homepage/videobanner/VideoBanner'
 import VærdierMission from '../components/Homepage/værdier/VærdierMission.js'
 
 import '../components/Homepage/homepage.css'
+import Samarbejdspartnere from '../components/Homepage/samarbejdspartnere/Samarbejdspartnere.js'
+import FeaturedProducts from '../components/Homepage/FeaturedProducts/FeaturedProducts.js'
 const HomePage = () => {
 
   // Wordpress headless CMS request
@@ -23,11 +25,14 @@ const HomePage = () => {
   return (
     <main>
       {posts.map(post => (
-        <VideoBanner  key={post.id} post={post} />
+        <>
+          <VideoBanner  key={post.id} post={post} />
+          <VærdierMission key={post.id} post={post} />   
+          <Samarbejdspartnere key={post.id} post={post} />     
+          <FeaturedProducts key={post.id} post={post} />
+        </>
         ))}
-      {posts.map(post => (
-        <VærdierMission key={post.id} post={post} />
-        ))}
+
       <Kurv />
     </main>
   )

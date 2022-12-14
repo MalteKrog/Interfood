@@ -35,6 +35,71 @@ main {
     margin-bottom: 50px;
 }
 
+/* Trusted section */
+
+.trusted-section {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.trusted-section h2 {
+    font-family: source-serif-4, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.firmaer {
+    width: 30%;
+    justify-content: space-around;
+    display: flex;
+}
+
+.circle {
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border: 4px solid red;
+    border-radius: 100%;
+    background-color: #8b0808;
+}
+
+.circle > img {
+    width: 50px;
+    height: auto;
+}
+
+/* Featured products */
+
+.featured-products-container {
+    width: 100%;
+    height: 70vh;
+    background-color: #e9e9e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-products-container h2 {
+    font-family: source-serif-4, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.featured-products-cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 @media only screen and (min-width: 900px) {
     .video-banner {
         text-align: left;
