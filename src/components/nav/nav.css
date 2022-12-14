@@ -1,7 +1,6 @@
 /* Navigation */
 
 .nav {
-
     display: flex;
     align-items: center;
     width: 54%;
@@ -155,7 +154,7 @@ h5 {
     }
 
     .nav {
-        position: relative;
+        position: fixed;
         z-index: 10;
         top: 0;
         display: flex;
@@ -163,6 +162,8 @@ h5 {
         width: 95%;
         padding: 0 2.5%;
         justify-content: space-between;
+        background-color: #fff;
+        height: 6.8vh;
     }
 
     .nav-menu {
@@ -189,8 +190,8 @@ h5 {
     .nav-dropdown {
         position: absolute;
         transform: translateX(-100%);
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         top: 30px;
         left: -40.4%;
         width: 100vw;
@@ -226,4 +227,11 @@ h5 {
         z-index: 10;
     }
 
+    .product-header {
+        padding: 0;
+    }
+
+    .open {
+        display: none;
+    }
 }
