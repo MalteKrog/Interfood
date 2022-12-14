@@ -12,7 +12,7 @@ const ProductPage = () => {
     
     useEffect(() => {
         async function getData() {
-            const responseProd = await fetch("https://interfood.mathiasqm.dk/wp-json/wp/v2/product?_embed&v=99999");
+            const responseProd = await fetch("https://interfood.mathiasqm.dk/wp-json/wp/v2/product?per_page=100");
             const data = await responseProd.json();
             console.log(data);
           setProducts(data);
@@ -34,8 +34,8 @@ const ProductPage = () => {
           </div>
 
       <div className='productPage'>
-          {products.map(product => (
-            <ProductCard  data={product} key={product.id} product={product} />
+          {products.map((product, i) => (
+            <ProductCard  data={product} key={product.id} product={product} i={i} />
           ))}
       <Kurv />
       </div>

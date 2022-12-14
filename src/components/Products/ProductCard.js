@@ -6,9 +6,8 @@ import {TbTruck,TbTruckOff} from 'react-icons/tb'
 import './products.css'
 import SingleProductInfo from './SingleProductInfo'
 
-const ProductCard = (props) => {
+const ProductCard = ({product, i}) => {
 
-  const {...product} = props.data;
   const stockAmmount = product.acf.stockammount
   const category = product.acf.category
 
@@ -56,7 +55,7 @@ const ProductCard = (props) => {
 
 
       </div>
-            <SingleProductInfo showDialog={showDialog} setShowDialog={setShowDialog} key={product.id} product={product} />
+            <SingleProductInfo showDialog={showDialog} setShowDialog={setShowDialog} key={product.id} product={product} i={i} />
     </>
   )
 }
