@@ -1,7 +1,6 @@
-import { useState } from "react";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import React, { useRef } from 'react';
+import React, { useRef, useState  } from 'react';
 import emailjs from '@emailjs/browser';
 import { Container, Row, Col } from "react-bootstrap";
 import PhoneInput from 'react-phone-input-2';
@@ -72,6 +71,7 @@ export const Contact = () => {
                         </form>
                         </div>
                 </div>
+                s
                  {/* 3 bokse med */}
                  <div className="container">
                     <div className="right">

@@ -5,7 +5,6 @@ import Findus from '../components/contact/findus'
 const ContactPage = () => {
   return (
     <>
-    <div>ContactPage</div>
     <Contact />
     <Findus />
     </>
