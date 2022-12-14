@@ -49,7 +49,6 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
-       <h2>Kontakt</h2>
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
@@ -59,7 +58,7 @@ export const Contact = () => {
 
               <section className="container">
                 <div className="contact-box">
-                 
+                <h2>Kontakt</h2>
 
                     {/* Kontakt formularboksen */}
                         <div className="left">
