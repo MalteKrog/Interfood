@@ -6,8 +6,8 @@ const AboutPage = () => {
   return (
     <>
     <div>Om International Food Supply ApS</div>
-    <Staff></Staff>
     <About></About>
+    <Staff></Staff>
     </>
   )
 };
