@@ -6,6 +6,7 @@
     align-items: center;
     overflow: auto;
 }
+
 .productPage {
     background-color: #E2E2E2;
     padding: 5%;
@@ -35,6 +36,7 @@
     font-weight: 700;
     font-style: normal;
 }
+
 .filters p {
     font-size: 1rem;
     font-family: roman;
@@ -57,7 +59,8 @@
     cursor: pointer;
 }
 
-.product-card-container:hover, .product-image-container .product-info-container{
+.product-card-container:hover,
+.product-image-container .product-info-container {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -68,7 +71,7 @@
     overflow: hidden;
 }
 
-.product-image-container > img{
+.product-image-container>img {
     width: 100%;
     position: relative;
     z-index: 0;
@@ -84,7 +87,7 @@
     margin: 5px;
 }
 
-.product-infobar-container  svg {
+.product-infobar-container svg {
     margin-right: 5px;
 }
 
@@ -95,7 +98,7 @@
     transition: ease-in-out 0.4s;
 }
 
-.icon-frost:hover svg:hover{
+.icon-frost:hover svg:hover {
     margin: 0px 5px;
 }
 
@@ -107,7 +110,7 @@
     color: #fff;
 }
 
-.icon-frost p{
+.icon-frost p {
     width: 0px;
 }
 
@@ -129,6 +132,7 @@
 .icon-lager p {
     width: 0px;
 }
+
 .icon-lager:hover p {
     width: 100%;
     margin-right: 5px;
@@ -146,26 +150,27 @@
     justify-content: space-between;
 }
 
-.product-card-title, .price {
+.product-card-title,
+.price {
     font-size: 1.2rem;
 }
 
-.product-info-container > div{
+.product-info-container>div {
     display: flex;
 }
 
-.product-info-container > div h3{
+.product-info-container>div h3 {
     display: flex;
     width: 50%;
     font-family: medium;
 }
 
-.product-info-container > p{
+.product-info-container>p {
     margin: 10px 0;
     width: 100%;
 }
 
-.product-info-container button{
+.product-info-container button {
     display: flex;
     gap: 1rem;
     align-self: end;
@@ -198,7 +203,7 @@
     text-align: left;
 }
 
-.image-container  {
+.image-container {
     width: 90%;
     /* aspect-ratio: 1/1; */
     background-color: #E9E9E9;
@@ -213,13 +218,13 @@
 }
 
 .sproduct-info {
-    background-color: #E9E9E9; 
+    background-color: #E9E9E9;
     min-width: 80%;
     height: 30%;
     padding: 20px;
 }
 
-.sproduct-info > div {
+.sproduct-info>div {
     display: flex;
     width: 100%;
     align-items: center;
@@ -252,7 +257,7 @@
     margin: 5px;
 }
 
-.sproduct-infobar-container  svg {
+.sproduct-infobar-container svg {
     margin-right: 5px;
 }
 
@@ -263,7 +268,7 @@
     transition: ease-in-out 0.4s;
 }
 
-.sicon-frost:hover svg:hover{
+.sicon-frost:hover svg:hover {
     margin: 0px 5px;
 }
 
@@ -275,7 +280,7 @@
     color: #000;
 }
 
-.sicon-frost p{
+.sicon-frost p {
     width: 0px;
 }
 
@@ -297,24 +302,71 @@
 .sicon-lager p {
     width: 0px;
 }
+
 .sicon-lager:hover p {
     width: 100%;
     margin-right: 5px;
 }
 
+.products-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    background-color: #fff;
+    border: #000 solid 2px;
+}
+
+.products-item:nth-child(2) {
+    border-top: #000 solid 1px;
+}
+
+.products-item:nth-child(3) {
+    border-top: #000 solid 1px;
+}
+
+.products-item {
+    width: 80%;
+}
+
+.products-title {
+    display: flex;
+    font-family: bold;
+    justify-content: space-between;
+    padding: 20px 20px 10px;
+}
+
+.products-title h4 {
+    color: #000;
+    font-family: bold;
+
+}
+
+.products-title .open {
+    display: block;
+}
+
+.products-header h5 {
+    font-family: thin;
+    padding: 2px 20px;
+}
+
 /* accordion */
 
 @media screen and (max-width: 800px) {
-    .et,.to{
+
+    .et,
+    .to {
         display: none;
     }
 }
 
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1000px) {
 
     .productPage {
-        background-color:  #E9E9E9;
+        background-color: #E9E9E9;
         padding: 0;
         height: 100vh;
         flex-direction: row;
@@ -324,13 +376,14 @@
         width: 100%;
         background-color: white;
     }
+
     .product-flex-container {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 0;
     }
 
-    .image-container  {
+    .image-container {
         width: 50%;
         height: 100%;
         background-color: #E9E9E9;
@@ -343,11 +396,11 @@
 
 
     .sproduct-info {
-        background-color: #fff; 
+        background-color: #fff;
         min-width: 45%;
         max-width: 50%;
         height: 100vh;
         padding: 20px;
     }
-    
+
 }
