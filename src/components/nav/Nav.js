@@ -104,23 +104,51 @@ const Nav = () => {
                                         {isOpen === true &&
                                             <div className="product-content">
                                                 <div className='product-header'>
-                                                    <NavLink to="/products">
+                                                <NavLink to="/products">
                                                         <h5 onClick={navToggle}>{underpunkt}</h5>
                                                     </NavLink>
-                                                    <h5 onClick={navToggle}> {underpunkt1}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt2}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt3}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt4}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt5}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt6}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt7}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt8}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt9}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt10}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt11}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt12}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt13}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt14}</h5>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt1}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt2}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt3}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt4}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt5}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt6}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt7}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt8}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt9}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt10}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt11}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt12}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt13}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt14}</h5>
+                                                    </NavLink>
                                                 </div>
                                             </div>}
                                         {isVisible === i &&
@@ -129,29 +157,55 @@ const Nav = () => {
                                                     <NavLink to="/products">
                                                         <h5 onClick={navToggle}>{underpunkt}</h5>
                                                     </NavLink>
-                                                    <h5 onClick={navToggle}> {underpunkt1}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt2}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt3}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt4}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt5}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt6}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt7}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt8}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt9}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt10}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt11}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt12}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt13}</h5>
-                                                    <h5 onClick={navToggle}> {underpunkt14}</h5>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt1}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt2}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt3}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt4}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt5}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt6}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt7}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt8}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt9}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt10}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt11}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt12}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt13}</h5>
+                                                    </NavLink>
+                                                    <NavLink to="/products">
+                                                        <h5 onClick={navToggle}>{underpunkt14}</h5>
+                                                    </NavLink>
+                                                    
                                                 </div>
                                             </div>}
                                     </div>
                                 </>
                             ))}
                         </div>
-                        <NavLink className="nav-link" to="/" onClick={navToggle}>
-                            Hjem
-                        </NavLink>
                         <NavLink onClick={navToggle} className="nav-link om-os" to="/about">
                             Om os
                         </NavLink>

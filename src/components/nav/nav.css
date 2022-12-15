@@ -76,7 +76,6 @@
     margin: 20% 0;
     grid-template-columns: 1fr;
     height: 20px;
-    ;
 }
 
 .nav-active {
@@ -159,7 +158,7 @@ h5 {
         top: 0;
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width: 100%;
         padding: 0 2.5%;
         justify-content: space-between;
         background-color: #fff;
@@ -229,9 +228,54 @@ h5 {
 
     .product-header {
         padding: 0;
+        border-bottom: #000 1px solid;
     }
 
     .open {
         display: none;
+    }
+
+    .product-item {
+        justify-content: flex-start;
+    }
+
+    .product-item:nth-child(8) {
+        margin-bottom: 20px;
+    }
+
+    .product-item:nth-child(2) .product-content .product-header h5 {
+        padding: 0 0 2px 0;
+    }
+
+    .product-item:nth-child(3) .product-content .product-header h5 {
+        padding: 0 0 2px 0;
+    }
+
+    .product-item:nth-child(5) .product-content .product-header h5 {
+        padding: 0 0 2px 0;
+    }
+
+    .product-item:nth-child(6) .product-content .product-header h5 {
+        padding: 0 0 2px 0;
+    }
+
+    .product-item:nth-child(7) .product-content .product-header h5 {
+        padding: 0 0 2px 0;
+    }
+
+    .product-item:nth-child(8) .product-content .product-header h5 {
+        padding: 0 0 2px 0;
+    }
+
+    .product-item:nth-child(9) .product-content .product-header h5 {
+        padding: 0 0 1px 0;
+    }
+
+    .product-item:nth-child(10) .product-content .product-header h5 {
+        padding: 0 0 1px 0;
+    }
+
+    .product-title {
+        padding: 15px 0 8px;
     }
 }
