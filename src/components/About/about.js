@@ -23,19 +23,19 @@ const About = () => {
     <div className={toggleTab === 1 ? "single-tab active-tab": "single-tab"}
     onClick = {() => toggleState(1)}
     >
-      <h2>About</h2>
+      <h2>Interfood</h2>
     </div>
 
     <div className={toggleTab === 2 ? "single-tab active-tab": "single-tab"}
     onClick = {() => toggleState(2)}
     >
-      <h2>Værdier</h2>
+      <h2>Produkter</h2>
     </div>
 
     <div className={toggleTab === 3 ? "single-tab active-tab": "single-tab"}
     onClick = {() => toggleState(3)}
     >
-      <h2>Experience</h2>
+      <h2>Historie</h2>
     </div>
       
     </div>
@@ -46,22 +46,16 @@ const About = () => {
 
     <div className={toggleTab === 1 ?"content active-content":"content"}>
       <h2>Hvem er vi?</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Eveniet nostrum laborum porro pariatur minima tenetur.
-       Adipisci obcaecati placeat ex veritatis est delectus sunt, 
-       quam doloribus nemo sed perferendis ipsa corporis?</p>
+      <p>International Food Supply er din pålidelige madgrossist som importerer og leverer Asiatiske fødevarer. Vi har mere end 15 års erfaring med forsyning og levering af asiatiske fødevarer i Danmark, hvilket har gjort os til en af de førende leverandører af Asiatiske fødevarer i Jylland og på Fyn. </p>
        <h3>Vi sørger for høj kvalitet med endnu højere service!</h3>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quae accusantium totam mollitia facilis debitis porro sunt repellat eveniet dignissimos.</p>
+       <p>Udover autentiske råvarer, levere vi også landets bedste service. Vi lægger stor dyd i at vores kunder altid kan føle sig sikre i deres kommunikation og samarbejde med os. Det er vigtigt for os at alle kan få hjælp under hele forløbet, og dermed skabe en god kundeoplevelse. </p>
     </div>
 
     {/* About Content */}
 
     <div className={toggleTab === 2 ?"content active-content":"content"}>
-      <h2>Værdier</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-       Eveniet nostrum laborum porro pariatur minima tenetur.
-       Adipisci obcaecati placeat ex veritatis est delectus sunt, 
-       quam doloribus nemo sed perferendis ipsa corporis?</p>
+      <h2>Noget for alle</h2>
+      <p>Om det er et gadekøkken i Vietnam, eller Micheline restaurant i København, har Interfood det der skal bruges til dig. Vi har omhyggeligt håndplukket, og kvalitetstestet vores produkter, for at med god samvittighed kan opretholde den bedste standard. Vores produktkatalog repræsenterer kendte varemærker, hvor disse produkter findes i supermarkeder, købmandsforretninger og restauranter over hele verdenen. Hertil udvider vi løbende vores produktkatalog, så kvaliteten af produkterne kontinuerligt forbedres. </p>
 
        
 

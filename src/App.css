@@ -391,11 +391,13 @@ iframe{
   justify-content: space-evenly;
 }
 .single-tab{
-  background: white;
+  border: rgb(247, 54, 54) 3px solid;
+  background: #f8f8f8;
   margin-right: 10px;
   cursor: pointer;
 }
 .single-tab h2{
+  font-family: 'Source Serif Pro', serif;
   display:block;
   padding: 10px 16px;
   border-radius: 4px;
@@ -405,7 +407,7 @@ iframe{
 }
 .about-img{
   position: relative;
-  background-image: url('./assets/img/placeholder.png');
+  background-image: url('./assets/img/AboutMichael.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -422,7 +424,7 @@ iframe{
   display: block;
 }
 .active-tab{
-  background: lightcoral;
+  background: rgb(247, 54, 54);
   position: relative;
 }
 .active-tab::before{
@@ -435,12 +437,13 @@ iframe{
   height: 0;
   border-style: solid;
   border-width: 5px 5px 0 5px;
-  border-color: lightcoral transparent transparent transparent;
+  border-color: rgb(247, 54, 54) transparent transparent transparent;
 }
 .active-tab h2{
   color: white;
 }
 .content h2{
+  font-family: 'Source Serif Pro', serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.4;
@@ -449,6 +452,7 @@ iframe{
 }
 
 .content h3{
+  font-family: 'Source Serif Pro', serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.5;
@@ -457,11 +461,12 @@ iframe{
 }
 
 .content p{
+  font-family: "Roman";
   padding-bottom: 1rem;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
-  color: #999;
+  color: #000;
 }
 
 /* Skills CSS */
@@ -516,7 +521,7 @@ iframe{
 }
 .exp-column span{
   font-weight: 500;
-  color: lightcoral;
+  color: rgb(247, 54, 54);
 }
 .exp-column p{
  margin-top: 10px;
@@ -541,4 +546,9 @@ iframe{
   .skills-row{
       grid-template-columns: 1fr;
   }
+
+  .single-tab h2 {
+    font-size: 18px;
+  }
+
 }
