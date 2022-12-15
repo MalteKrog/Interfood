@@ -32,12 +32,14 @@
 
 .footer-li,
 .ul-box a {
+    font-family: "Roman";
     color: #fff;
     margin: 5px 0;
     font-size: 14px;
 }
 
 .ul-box a {
+    font-family: "Roman";
     text-decoration: none;
 }
 
@@ -63,10 +65,10 @@
     display: block;
     opacity: 1;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 20px;
     color: #fff;
     width: fit-content;
-    border-bottom: 2px solid #CF4444;
+    font-family: 'Source Serif Pro', serif;
 }
 
 .logo-box p {
