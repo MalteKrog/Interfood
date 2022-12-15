@@ -1,0 +1,297 @@
+/* Styling af vores staff cards */
+
+
+@font-face {
+    font-family: "Thin";
+    src: local("NeueHaasDisplayThin"),
+      url("../../assets/fonts/NeueHaasDisplayThin.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Light";
+    src: local("NeueHaasDisplayLight"),
+      url("../../assets/fonts/NeueHaasDisplayLight.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Roman";
+    src: local("NeueHaasDisplayRoman"),
+      url("../../assets/fonts/NeueHaasDisplayRoman.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Medium";
+    src: local("NeueHaasDisplayMediu"),
+      url("../../assets/fonts/NeueHaasDisplayMediu.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Bold";
+    src: local("NeueHaasDisplayBold"),
+      url("../../assets/fonts/NeueHaasDisplayBold.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Bold Italic";
+    src: local("NeueHaasDisplayBoldItalic"),
+      url("../../assets/fonts/NeueHaasDisplayBoldItalic.ttf") format("truetype");
+  }  
+
+*,
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+}
+
+a {
+    color: rgb(247, 54, 54);
+    font-weight: 400;
+    outline: none;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: black;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.staffcontainer {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.staffsection {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.staffsection h1 {
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    margin: 0 0 5px;
+    position: relative;
+}
+
+.staffsection h1::before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 3px;
+    right: 30%;
+    background-color: rgb(247, 54, 54);
+    bottom: -5px;
+}
+
+.staffcontainer .staffsection h1::before {
+    left: 30%;
+}
+
+.staffrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.staffcolumn {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 100%;
+    max-width: 100% ;
+}
+
+.team {
+    margin-bottom: 50px;
+}
+
+.team .team-img {
+    position: relative;
+    font-size: 0;
+    text-align: center;
+}
+
+.team .team-img img {
+    width: 160px;
+    height: auto;
+    border-radius: 100%;
+    border: 20px solid rgb(247, 54, 54);
+}
+
+.team .team-content {
+    padding: 80px 20px 20px 20px;
+    margin-top: -80px;
+    text-align: center;
+    background-color:  rgb(247, 54, 54);
+    border-radius: 10px;
+}
+
+.team .team-content h2{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1.8px;
+    font-family: "medium";
+}
+
+.team .team-content h3{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "light";
+}
+
+.team .team-content h4{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: "medium";
+    margin-bottom: 0;
+}
+
+.team .team-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: "light";
+}
+
+.team .team-social {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.478);
+    transition: all .3s;
+    font-size: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.team:hover .team-social {
+    opacity: 1;
+}
+
+.team:hover .team-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 11px 0 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    color: azure;
+    border-radius: 10px;
+    transition: all .3s;
+    margin-top: 50px;
+}
+
+.team .team-social a.social-fb {
+    background-color: #3b5998;
+}
+
+.team .team-social a.social-li {
+    background-color: #0e76a8;
+}
+
+.team .team-social a.social-tw {
+    background-color: #00acee;
+}
+
+.team .team-social a.social-ig {
+    background-color: #3f729b;
+}
+
+.team .team-social a:last-child {
+    margin-right: 0;
+}
+
+.team:hover .team-social a{
+    margin-top: 0;
+}
+
+.team .team-social a:hover {
+    background-color: rgb(247, 54, 54);
+}
+
+/* Responsiv til mobil */
+
+@media (min-width: 576px) {
+    .staffcontainer {
+        max-width: 540px;
+    }
+
+    .staffcolumn {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .staffcontainer {
+        max-width: 720px;
+    }
+
+    .staffcolumn {
+        max-width: 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+    .staffcontainer {
+        max-width: 960px;
+    }
+
+    .staffcolumn {
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .staffcontainer {
+        max-width: 1140px;
+    }
+}

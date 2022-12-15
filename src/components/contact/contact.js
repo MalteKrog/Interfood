@@ -1,7 +1,6 @@
-import { useState } from "react";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import React, { useRef } from 'react';
+import React, { useRef, useState  } from 'react';
 import emailjs from '@emailjs/browser';
 import { Container, Row, Col } from "react-bootstrap";
 import PhoneInput from 'react-phone-input-2';
@@ -49,7 +48,6 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
-       <h2>Kontakt</h2>
       <Container>
         <Row className="align-items-center">
           <Col size={12} md={6}>
@@ -59,7 +57,7 @@ export const Contact = () => {
 
               <section className="container">
                 <div className="contact-box">
-                 
+                <h2>Kontakt</h2>
 
                     {/* Kontakt formularboksen */}
                         <div className="left">
@@ -72,6 +70,7 @@ export const Contact = () => {
                         </form>
                         </div>
                 </div>
+                s
                  {/* 3 bokse med */}
                  <div className="container">
                     <div className="right">
