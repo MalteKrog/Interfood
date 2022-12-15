@@ -358,7 +358,8 @@ iframe{
 }
 
 .column .tabs{
-  display: flex;   
+  display: flex;
+  justify-content: space-evenly;
 }
 .single-tab{
   background: white;
@@ -370,7 +371,7 @@ iframe{
   padding: 10px 16px;
   border-radius: 4px;
   color: #3c3c3c;
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 600;
 }
 .about-img{
