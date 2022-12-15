@@ -70,9 +70,9 @@ export const Contact = () => {
                         </form>
                         </div>
                 </div>
-                s
+                
                  {/* 3 bokse med */}
-                 <div className="container">
+                 <div className="box-container">
                     <div className="right">
 
                         <div class="box">
