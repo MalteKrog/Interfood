@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./footer.css"
 
-import Logo from '../assets/interfood-logo.png'
+import Logo from '../assets/Aktiv 2.png'
 
 const Footer = () => {
 
