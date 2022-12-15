@@ -99,6 +99,8 @@ const About = () => {
 
     </section>
     
+    <div style={{ borderTop: "4px solid #ADADAD ", marginLeft: 200, marginRight: 200 }}></div>
+
     </Fragment>
   )
 }
