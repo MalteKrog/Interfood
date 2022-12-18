@@ -96,7 +96,7 @@ const Nav = () => {
 
                             {NavData.map(({ id, title, underpunkt, underpunkt1, underpunkt2, underpunkt3, underpunkt4, underpunkt5, underpunkt6, underpunkt7, underpunkt8, underpunkt9, underpunkt10, underpunkt11, underpunkt12, underpunkt13, underpunkt14 }, i) => (
                                 <>
-                                    <div className="product-item" key={id} index={i}>
+                                    <div className="product-item" key={i}>
                                         <div className="product-title" onClick={() => toggle(i)}>
                                             <h4>{title}</h4>
                                             <div className='open'>{isVisible === i ? '-' : '+'}</div>
@@ -152,7 +152,7 @@ const Nav = () => {
                                                 </div>
                                             </div>}
                                         {isVisible === i &&
-                                            <div className="product-content">
+                                            <div className="product-content" key={i}>
                                                 <div className='product-header'>
                                                     <NavLink to="/products">
                                                         <h5 onClick={navToggle}>{underpunkt}</h5>

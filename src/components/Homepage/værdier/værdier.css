@@ -28,6 +28,7 @@
 .mission-banner img {
     display: none;
     width: 30%;
+    overflow: hidden;
     background-color: #c72222;
 }
 

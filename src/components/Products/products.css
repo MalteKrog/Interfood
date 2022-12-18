@@ -51,7 +51,7 @@
 /* Product card */
 .product-card-container {
     margin: 25px;
-    width: 258px;
+    max-width: 258px;
     height: 350px;
     display: flex;
     flex-direction: column;
