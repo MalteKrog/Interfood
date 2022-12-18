@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react'
-import { NavLink } from 'react-router-dom';
 import ProductCard from '../components/Products/ProductCard'
 import Kurv from '../components/Kurv/Kurv.js'
 
@@ -20,7 +19,6 @@ const ProductPage = () => {
         getData();
     }, []);
     
-    const {...product} = products
   return (
     <div className='background'>
           <div className='filters'>
@@ -35,7 +33,7 @@ const ProductPage = () => {
 
       <div className='productPage'>
           {products.map((product, i) => (
-            <ProductCard  data={product} key={product.id} product={product} i={i} />
+            <ProductCard key={product.id} product={product} i={i} />
           ))}
       <Kurv />
       </div>
