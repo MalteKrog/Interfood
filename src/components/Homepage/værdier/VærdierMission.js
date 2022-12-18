@@ -15,18 +15,18 @@ const VærdierMission = ({post}) => {
                     <p>{post.acf.vaerdierTekst}</p>
                 </div>
             </div>
-                <div className='mission-card test'>
-                    <h3>{post.acf.vaerdierKort1}</h3>
-                    <p>{post.acf.kort1tekst}</p>
-                </div>
-                <div className='mission-card'>
-                    <h3>{post.acf.vaerdierKort2}</h3>
-                    <p>{post.acf.kort2tekst}</p>
-                </div>
-                <div className='mission-card test2'>
-                    <h3>{post.acf.vaerdierKort3}</h3>
-                    <p>{post.acf.kort3tekst}</p>
-                </div>
+            <article className='mission-card test'>
+                <h3>{post.acf.vaerdierKort1}</h3>
+                <p>{post.acf.kort1tekst}</p>
+            </article>
+            <article className='mission-card'>
+                <h3>{post.acf.vaerdierKort2}</h3>
+                <p>{post.acf.kort2tekst}</p>
+            </article>
+            <article className='mission-card test2'>
+                <h3>{post.acf.vaerdierKort3}</h3>
+                <p>{post.acf.kort3tekst}</p>
+            </article>
         </div>
     </section>
   )

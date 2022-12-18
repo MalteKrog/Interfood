@@ -212,6 +212,9 @@ const Nav = () => {
                         <NavLink onClick={navToggle} className="nav-link" to="/contact">
                             Kontakt
                         </NavLink>
+                        <NavLink className="e-button" onClick={navToggle} to="/contact">
+                            <button className='kunde-button'>Bliv Erhvervskunde</button>
+                        </NavLink>
                     </div>
                 </div>
                 <div className='nav-logo'>

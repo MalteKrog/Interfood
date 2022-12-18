@@ -147,7 +147,31 @@ h5 {
     color: #000;
 }
 
-@media only screen and (min-width: 600px) {
+.kunde-button {
+    background-color: rgb(247, 54, 54);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #fff;
+    font-family: "Roman";
+}
+
+.log-ind {
+    font-family: "Roman";
+    padding-right: 5px;
+}
+
+.e-button {
+    width: 40%;
+}
+
+@media only screen and (min-width: 900px) {
+    .e-button {
+        margin-left: 50px;
+        width: auto;
+    }
+
     .nav-toggler {
         display: none;
     }
@@ -182,7 +206,7 @@ h5 {
         flex-direction: row;
         padding: 0;
         height: auto;
-        align-items: center;
+        align-items: flex-end;
         justify-content: flex-end;
     }
 
@@ -215,6 +239,7 @@ h5 {
     .nav-link {
         font-size: 15px;
         padding: 0 20px;
+        margin-top: 5px;
     }
 
     .nav-dropdown-active {

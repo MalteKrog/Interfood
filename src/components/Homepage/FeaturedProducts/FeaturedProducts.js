@@ -16,7 +16,7 @@ const FeaturedProducts = ({post}) => {
     
 
   return (
-    <div className='featured-products-container'>
+    <article className='featured-products-container'>
         <h2>Featured Products</h2>
         <p>"These are some of our customers favorite products"</p>
         <div className='featured-products-cards'>
@@ -27,7 +27,7 @@ const FeaturedProducts = ({post}) => {
         </div>
       
                   
-    </div>
+    </article>
   )
 }
 

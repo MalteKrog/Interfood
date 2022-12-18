@@ -19,7 +19,7 @@ const Footer = () => {
                 <div className='mobil-flexbox'>
                     <div className='footer-section'>
                         <h3>Navigation</h3>
-                        <ul className="ul-box">
+                        <div className="ul-box">
                             <NavLink to="/">
                                 Hjem
                             </NavLink>
@@ -32,7 +32,7 @@ const Footer = () => {
                             <NavLink to="/contact">
                                 Kontakt
                             </NavLink>
-                        </ul>
+                        </div>
                     </div>
                     <div className='footer-section'>
                         <h3>Interfood</h3>

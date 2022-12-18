@@ -32,14 +32,14 @@
 
 .filters h1 {
     font-size: 1.8rem;
-    font-family: source-serif-4, serif;
+    font-family: "source serif pro", serif;
     font-weight: 700;
     font-style: normal;
 }
 
 .filters p {
     font-size: 1rem;
-    font-family: roman;
+    font-family: "roman";
 }
 
 .filter-buttons {

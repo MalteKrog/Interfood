@@ -53,7 +53,7 @@
 
 #kontaktbtn {
   border: 0;
-  background-color: #CF4444;
+  background-color: rgb(247, 54, 54);
   color: #fff;
   padding: .5rem;
   margin: 1rem 0;
@@ -327,7 +327,7 @@ iframe{
 /* Telefon boks :) */
 
 .box{
-  background-color: #bc4040;
+  background-color: rgb(247, 54, 54);
   border: 1px solid #DDD;
   height: auto;
   color: #fff;
